@@ -2,6 +2,7 @@ run:
   timeout: 5m
 
 linters:
+  disable-all: true
   enable:
     - errcheck
     - goimports
@@ -9,7 +10,6 @@ linters:
     - gosimple
     - govet
     - ineffassign
-    - megacheck
     - staticcheck
     - typecheck
     - unused
