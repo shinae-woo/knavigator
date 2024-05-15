@@ -3,6 +3,7 @@
 # Knavigator
 
 ![Build Status](https://github.com/NVIDIA/knavigator/actions/workflows/go.yml/badge.svg)
+[![codecov](https://codecov.io/github/shinae-woo/knavigator/graph/badge.svg?token=L6HOTRHFD4)](https://codecov.io/github/shinae-woo/knavigator)
 ![Static Badge](https://img.shields.io/badge/license-Apache_2.0-green)
 
 ## Overview
