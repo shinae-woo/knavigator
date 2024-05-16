@@ -16,19 +16,8 @@ env:
 jobs:
   test-k8s:
     runs-on: ubuntu-latest
-    if: ${{ github.event.issue.pull_request }} && contains(github.event.comment.body, '/test-k8s') 
     steps:
-      - name: Fetch Branch Name
-        id: fetch-branch-name
-        uses: xt0rted/pull-request-comment-branch@v2
-
       - uses: actions/checkout@v4
-
-      - name: Post response to GitHub PR
-        uses: mshick/add-pr-comment@v2
-        with:
-          message: |
-            Action started. Click [here](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}) to see the status.
 
       - name: Set up Go
         uses: actions/setup-go@v4
